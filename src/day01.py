@@ -12,5 +12,5 @@ for i in range(len(data)):
                 print(f"Solution 1: {data[i] * data[j]}")
                 solution1 = False
             if no_solution2 and data[i] + data[j] + data[k] == 2020:
-                print(f"Solution 2: {data[i] * data[j] * data[k]")
+                print(f"Solution 2: {data[i] * data[j] * data[k]}")
                 solution2 = False

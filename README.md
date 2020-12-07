@@ -7,15 +7,15 @@ My solutions for [Advent of Code 2020](https://adventofcode.com/2020/).
 python -m cProfile src/dayXX.py input/inputXX
 ```
 
-| Day |      Time     |
-|:---:|:-------------:|
-|  [01](https://adventofcode.com/2020/day/1) | 0.034 seconds |
-|  [02](https://adventofcode.com/2020/day/2) | 0.001 seconds |
-|  [03](https://adventofcode.com/2020/day/3) | 0.000 seconds |
-|  [04](https://adventofcode.com/2020/day/4) | 0.006 seconds |
-|  [05](https://adventofcode.com/2020/day/5) | 0.004 seconds |
-|  [06](https://adventofcode.com/2020/day/6) | 0.002 seconds |
-|  [07](https://adventofcode.com/2020/day/7) | 0.057 seconds |
+| Day |      Time     |  Source  |
+|:---:|:-------------:|:--------:|
+|  [01](https://adventofcode.com/2020/day/1) | 0.034 seconds | [:page_facing_up:](https://github.com/hmludwig/aoc2020/blob/main/src/day01.py)
+|  [02](https://adventofcode.com/2020/day/2) | 0.001 seconds | [:page_facing_up:](https://github.com/hmludwig/aoc2020/blob/main/src/day02.py)
+|  [03](https://adventofcode.com/2020/day/3) | 0.000 seconds | [:page_facing_up:](https://github.com/hmludwig/aoc2020/blob/main/src/day03.py)
+|  [04](https://adventofcode.com/2020/day/4) | 0.006 seconds | [:page_facing_up:](https://github.com/hmludwig/aoc2020/blob/main/src/day04.py)
+|  [05](https://adventofcode.com/2020/day/5) | 0.004 seconds | [:page_facing_up:](https://github.com/hmludwig/aoc2020/blob/main/src/day05.py)
+|  [06](https://adventofcode.com/2020/day/6) | 0.002 seconds | [:page_facing_up:](https://github.com/hmludwig/aoc2020/blob/main/src/day06.py)
+|  [07](https://adventofcode.com/2020/day/7) | 0.057 seconds | [:page_facing_up:](https://github.com/hmludwig/aoc2020/blob/main/src/day07.py)
 
 The benchmarks have been measured on this machine:
 ```

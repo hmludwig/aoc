@@ -1,5 +1,4 @@
 import sys
-from numba import njit
 
 f = open(sys.argv[1])
 data = f.read().strip().split(',')

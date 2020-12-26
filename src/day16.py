@@ -1,5 +1,6 @@
 import sys
 from collections import defaultdict
+import numpy as np
 
 f = open(sys.argv[1])
 data = f.read().strip().splitlines()
@@ -17,7 +18,7 @@ for i, d in enumerate(data):
     elif d == 'nearby tickets:':
         for k in range(i + 1, len(data)):
             tickets.append([int(x) for x in data[k].split(',')])
-        break 
+        break
     elif rules_section:
         tmp = d.split(': ')
         rule_name = tmp[0]
@@ -71,21 +72,24 @@ for i, k in enumerate(rule_index):
     table.append([])
     for j in range(len(my_ticket)):
         if j in rule_index[k]:
-            if j < 10:
-                table[i].append('0' + str(j))
-            else:
-                table[i].append(str(j))
+            table[i].append(1)
         else:
-            table[i].append('xx')
+            table[i].append(0)
 
-for x in table:
-    for k in x:
-        print(k, end=' ')
-    print()
+positions = list()
+table = np.array(table)
 
-product = 1
-indice = [2, 14, 7, 19, 16, 13]
-for x in indice:
-    product *= my_ticket[x]
+while len(positions) != 6:
+    for i in range(len(my_ticket)):
+        if sum(table[:, i]) == 1:
+            for j, x in enumerate(table[:, i]):
+                if x == 1:
+                    if j < 6:
+                        positions.append(i)
+                    table[j, :] = 0
 
-print(f'Part 2: {product}')
+prod = 1
+for x in positions:
+    prod *= my_ticket[x]
+
+print(f'Part 2: {prod}')

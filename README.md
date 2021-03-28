@@ -4,14 +4,14 @@
 
 ### Overall Stars Collected (54/300):  
 
-* #### [2015](https://adventofcode.com/2015) - Stars Collected (0/50)  
+* #### [2015](https://github.com/hmludwig/adventofcode/tree/main/2015) - Stars Collected (0/50)  
 
-* #### [2016](https://adventofcode.com/2016) - Stars Collected (0/50)
+* #### [2016](https://github.com/hmludwig/adventofcode/tree/main/2016) - Stars Collected (0/50)
 
-* #### [2017](https://adventofcode.com/2017) - Stars Collected (0/50)
+* #### [2017](hhttps://github.com/hmludwig/adventofcode/tree/main/2017) - Stars Collected (0/50)
 
-* #### [2018](https://adventofcode.com/2018) - Stars Collected (0/50)
+* #### [2018](https://github.com/hmludwig/adventofcode/tree/main/2018) - Stars Collected (0/50)
 
-* #### [2019](https://adventofcode.com/2019) - Stars Collected (22/50)
+* #### [2019](https://github.com/hmludwig/adventofcode/tree/main/2019) - Stars Collected (22/50)
 
-* #### [2020](https://adventofcode.com/2020) - Stars Collected (32/50)
+* #### [2020](https://github.com/hmludwig/adventofcode/tree/main/2020) - Stars Collected (32/50)

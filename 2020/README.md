@@ -21,7 +21,7 @@ My solutions for [Advent of Code 2020](https://adventofcode.com/2020/).
 |  [14](https://adventofcode.com/2020/day/14) | :star: | :star: | [:page_facing_up:](https://github.com/hmludwig/adventofcode/blob/main/2020/src/day14.py)
 |  [15](https://adventofcode.com/2020/day/15) | :star: | :star: | [:page_facing_up:](https://github.com/hmludwig/adventofcode/blob/main/2020/src/day15.py)
 |  [16](https://adventofcode.com/2020/day/16) | :star: | :star: | [:page_facing_up:](https://github.com/hmludwig/adventofcode/blob/main/2020/src/day16.py)
-|  [17](https://adventofcode.com/2020/day/17) | | |
+|  [17](https://adventofcode.com/2020/day/17) | :star: | :star: | [:page_facing_up:](https://github.com/hmludwig/adventofcode/blob/main/2020/src/day17.py)
 |  [18](https://adventofcode.com/2020/day/18) | | |
 |  [19](https://adventofcode.com/2020/day/19) | | |
 |  [20](https://adventofcode.com/2020/day/20) | | |

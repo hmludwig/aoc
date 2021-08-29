@@ -69,6 +69,13 @@ class Image:
                 print(self.image[i][j].tile_id, end=' ')
         print()
 
+def rotations(x):
+    for _ in range(2):
+        for _ in range(4):
+            yield x
+            x = np.rot90(x)
+        x = np.flip(x, 0)
+
 
 def check_tile_above(image, i, j):
     if image.image[i - 1][j].tile_id != -1:
@@ -214,3 +221,30 @@ if __name__ == '__main__':
         -1].tile_id * image.image[-1][0].tile_id * image.image[-1][-1].tile_id
 
     print(f'Part 1: {solution1}')
+
+    sea_monster = ['                  # ','#    ##    ##    ###',' #  #  #  #  #  #   ']
+    sea_monster = [x.replace(' ', '0').replace('#', '1') for x in sea_monster]
+    sea_monster = [[c for c in x] for x in sea_monster]
+    sea_monster = np.array(sea_monster, dtype=int)
+    n_ones = sum(sum(sea_monster))
+
+    for i in range(image.height):
+        for j in range(image.width):
+            image.image[i][j].tile = image.image[i][j].tile[1:-1, 1:-1]
+
+    image_string = image.__str__().replace('.', '0').replace('#','1').split()
+    image_string = [[c for c in x] for x in image_string]
+    image_string = np.array(image_string, dtype=int)
+
+    n_sea_monsters = 0
+    m, n = sea_monster.shape
+    for x in rotations(image_string):
+        for i in range(len(image_string) - m + 1):
+            for j in range(len(image_string) - n + 1):
+                if np.sum(x[i:i+m, j:j+n] * sea_monster) == n_ones:
+                    n_sea_monsters += 1
+        if n_sea_monsters != 0:
+            break
+
+    solution2 = sum(sum(image_string)) - n_sea_monsters * n_ones
+    print(f'Part 2: {solution2}')
